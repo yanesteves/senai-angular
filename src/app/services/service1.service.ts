@@ -6,6 +6,9 @@ import { Injectable } from '@angular/core';
 export class Service1Service {
 
   publiccustomVariable = 'custom variable'
+
+  nomeUsuario = "Jorge de Paula"
+
   constructor() { }
   
     public get() {

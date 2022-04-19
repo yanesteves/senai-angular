@@ -1,0 +1,19 @@
+<p>aula2 works!</p>
+
+<span>Usuário logado {{ _service.nomeUsuario }}</span>
+<!-- keypress -->
+
+
+<!-- <input type="text" (keypress)="keyPress($event)" [(ngModel)]="nomePessoa"> -->
+
+<!-- [class.active]="formValid" -->
+<!-- <button (click)="MostrarNome()">
+    Informar nome
+</button> -->
+
+<form [formGroup]="_form" (ngSubmit)="submit()">
+    <input type="text" placeholder="Nome" formControlName="nome">
+    <input type="text" placeholder="Estado" formControlName="estado">
+    <input type="text" placeholder="Endereço" formControlName="endereco">
+    <button type="submit">Enviar</button>
+</form>

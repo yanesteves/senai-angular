@@ -4,7 +4,8 @@
 <!-- keypress -->
 
 
-<!-- <input type="text" (keypress)="keyPress($event)" [(ngModel)]="nomePessoa"> -->
+<!-- <input type="text" placeholder="digite aqui" (keyup)="keyUp($event)"> -->
+<input type="text" placeholder="digite aqui"  (keyup)="keyUp($event)" (keypress)="keyPress($event)" [(ngModel)]="nomePessoa">
 
 <!-- [class.active]="formValid" -->
 <!-- <button (click)="MostrarNome()">

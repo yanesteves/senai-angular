@@ -44,13 +44,14 @@ export class Aula2Component implements OnInit {
   }
 
   keyPress(event: any) { 
+    console.log('key down')
+    // alert('Key Down '+this.nomePessoa)
   }
 
-  // keyup(event: any) {
-  //   alert('key up' )
-  //   console.log('-- key up --')
-  //   console.log(this.nomePessoa)
-  // }
+  keyUp(event: any) {
+    console.log('key up')
+    // alert('Key Up ' + this.nomePessoa)
+  }
 
   MostrarNome() {
     alert(this.nomePessoa)

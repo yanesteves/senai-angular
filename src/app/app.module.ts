@@ -16,6 +16,8 @@ import { FilmeComponent } from './views/filme/filme.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { WebService } from './services/web.service';
+import { Aula3Component } from './views/aula3/aula3.component';
+import { FormataCPFPipe } from './pipes/formata-cpf.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { WebService } from './services/web.service';
     FooterComponent,
     HeaderComponent,
     Aula2Component,
-    FilmeComponent
+    FilmeComponent,
+    Aula3Component,
+    FormataCPFPipe
   ],
   imports: [
     BrowserModule,

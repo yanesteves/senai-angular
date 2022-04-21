@@ -11,7 +11,7 @@
 /node_modules
 
 # variáveis de ambiente
-/src/environments
+/src/environments/*
 
 # profiling files
 chrome-profiler-events*.json

@@ -12,6 +12,12 @@ import { Aula2Component } from './views/aula2/aula2.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { Service1Service } from './services/service1.service';
+import { FilmeComponent } from './views/filme/filme.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { WebService } from './services/web.service';
+import { Aula3Component } from './views/aula3/aula3.component';
+import { FormataCPFPipe } from './pipes/formata-cpf.pipe';
 
 @NgModule({
   declarations: [
@@ -19,16 +25,22 @@ import { Service1Service } from './services/service1.service';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    Aula2Component
+    Aula2Component,
+    FilmeComponent,
+    Aula3Component,
+    FormataCPFPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+
+    HttpClientModule
   ],
   providers: [
-    Service1Service
+    Service1Service,
+    WebService
   ],
   bootstrap: [AppComponent]
 })

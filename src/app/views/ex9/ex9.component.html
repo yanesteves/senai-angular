@@ -4,8 +4,15 @@ overview
 poster_path (renderize a imagem)
 vote_average
 vote_count -->
-<img [src]="'' + filmePopular?.poster_path">
+<!-- https://image.tmdb.org/t/p/w500/pB8BM7pdSp6B6Ih7QZ4DrQ3PmJK.jpg -->
+
+<img [src]="'https://image.tmdb.org/t/p/w500' + filmePopular?.poster_path">
+
 <p>{{ filmePopular?.original_title }}</p>
 <p>{{ filmePopular?.overview }}</p>
 <p>avg: {{ filmePopular?.vote_average }}</p>
 <p>Votos: {{ filmePopular?.vote_count }}</p>
+
+<button (click)="filmeAnterior()">Anterior</button>
+{{indiceFilme}}
+<button (click)="proximoFilme()">Próximo</button>

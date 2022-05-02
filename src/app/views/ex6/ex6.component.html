@@ -1,0 +1,20 @@
+<p>Dados filme:</p>
+
+<h3 *ngIf="carregado == 0">Carregando</h3>
+
+<p>{{ resposta.original_title }}</p>
+<p>{{ resposta.overview }}</p>
+<!-- <p>{{ resposta.genres.length }}</p> -->
+
+<div class="area-generos">
+    <span *ngFor="let g of resposta.genres">{{ g.name }}</span>
+</div>
+
+<!-- <p *ngFor="let g of resposta.genres">
+    
+</p> -->
+<!-- <p>{{ resposta.genres[0].name }}</p>
+<p>{{ resposta.genres[1].name }}</p> -->
+<!-- <pre>
+    {{ resposta | json }}
+</pre> -->

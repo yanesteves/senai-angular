@@ -1,0 +1,22 @@
+<p>ex4 works!</p>
+
+<!-- 
+    Construa um formulário com os seguintes campos, utilizando [formBuilder]:
+
+nome: string
+email: string
+nomeFilme: string
+avaliacao: int (1 a 10)
+
+Adicione um botão de enviar e cancelar como acionadores do formulário.
+Ao clicar em "Enviar", gere uma mensagem com `Você avaliou o filme ${nomeFilme}`
+ -->
+<form [formGroup]="_form" (ngSubmit)="enviaFormulario()">
+    <input type="text" placeholder="Nome" formControlName="nome">
+    <input type="email" placeholder="email" formControlName="email">
+    <input type="text" placeholder="Nome do Filme" formControlName="nomeFilme">
+    <!-- avaliacao -->
+    
+    <button type="submit">Enviar</button>
+    <!-- cancelar -->
+</form>

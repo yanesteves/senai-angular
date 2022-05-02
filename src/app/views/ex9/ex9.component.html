@@ -1,0 +1,11 @@
+<p>ex9 works!</p>
+<!-- original_title
+overview
+poster_path (renderize a imagem)
+vote_average
+vote_count -->
+<img [src]="'' + filmePopular?.poster_path">
+<p>{{ filmePopular?.original_title }}</p>
+<p>{{ filmePopular?.overview }}</p>
+<p>avg: {{ filmePopular?.vote_average }}</p>
+<p>Votos: {{ filmePopular?.vote_count }}</p>

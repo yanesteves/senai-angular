@@ -10,6 +10,13 @@ export class HomeComponent implements OnInit {
 
   variavel1 = `Cliques 0`;
   contagem = 0;
+
+  infoFilme = {
+    nome: '',
+    descricao: '',
+    genero: []
+  }
+
   constructor(
     // private _service: Service1Service
     ) {     

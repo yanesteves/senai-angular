@@ -1,0 +1,15 @@
+<p>serie works!</p>
+<!-- /serie -> abre componente serie -->
+
+<!-- <app-lista-eps [lista]="filme"></app-lista-eps> -->
+<!-- 
+<app-lista-episodios 
+[episodios]="listaEPs" 
+(outputEvent)="chamarFuncao($event)">
+</app-lista-episodios> -->
+
+<!-- <hr> -->
+<app-lista-episodios 
+    [episodios]="arraySerie"
+    (outputEvent)="eventoRecebido($event)"
+></app-lista-episodios>

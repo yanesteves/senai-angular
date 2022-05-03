@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { Aula2Component } from './views/aula2/aula2.component';
 import { Aula3Component } from './views/aula3/aula3.component';
 import { FilmeComponent } from './views/filme/filme.component';
+import { SerieComponent } from './views/serie/serie.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'detalhe-filme',
     component: FilmeComponent
+  },
+  {
+    path: 'series',
+    component: SerieComponent
   }
 ];
 

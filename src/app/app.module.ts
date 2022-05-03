@@ -18,6 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { WebService } from './services/web.service';
 import { Aula3Component } from './views/aula3/aula3.component';
 import { FormataCPFPipe } from './pipes/formata-cpf.pipe';
+import { SerieComponent } from './views/serie/serie.component';
+import { ListaEpisodiosComponent } from './components/lista-episodios/lista-episodios.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { FormataCPFPipe } from './pipes/formata-cpf.pipe';
     Aula2Component,
     FilmeComponent,
     Aula3Component,
-    FormataCPFPipe
+    FormataCPFPipe,
+    SerieComponent,
+    ListaEpisodiosComponent,
   ],
   imports: [
     BrowserModule,

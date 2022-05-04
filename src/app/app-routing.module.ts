@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
 import { Aula2Component } from './views/aula2/aula2.component';
 import { Aula3Component } from './views/aula3/aula3.component';
 import { FilmeComponent } from './views/filme/filme.component';
+import { HomeComponent } from './views/home/home.component';
 import { SerieComponent } from './views/serie/serie.component';
 
 const routes: Routes = [
   {
     path: '',
+    // esse
+    // component: HomeComponent,
+    // ou esse abaixo
     redirectTo: 'home',
     pathMatch: 'full'
   },
@@ -31,7 +34,15 @@ const routes: Routes = [
   {
     path: 'series',
     component: SerieComponent
-  }
+  },
+  // {
+  //   path: 'serie',
+  //   component: SerieComponent
+  // }
+  // {
+  //   path: '**',
+  //   component: HomeComponent
+  // }
 ];
 
 @NgModule({

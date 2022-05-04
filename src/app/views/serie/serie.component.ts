@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { EventEmitterService } from 'src/app/services/event-emitter.service';
 @Component({
   selector: 'app-serie',
   templateUrl: './serie.component.html',
@@ -24,9 +25,17 @@ export class SerieComponent implements OnInit {
       duracao: "27min"
     }
   ];
-  constructor() { }
+//   constructor(private route: ActivatedRoute,
+//     private router: Router,
+//     private disciplinasService: DisciplinasService) {
+// }
 
-  ngOnInit(): void {   
+// ngOnInit() {
+// const id = this.route.snapshot.paramMap.get('id');
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit(): void {       
+    const serie_id = this.route.snapshot.paramMap.get('id');
   }
 
   chamarFuncao(event: any) {
@@ -34,7 +43,7 @@ export class SerieComponent implements OnInit {
   }
 
   eventoRecebido(event: any) {
-    alert(event)
+    alert('Ver sinopse: ' + event)
     console.log(event)
   }
 }

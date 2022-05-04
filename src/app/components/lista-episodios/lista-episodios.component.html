@@ -6,7 +6,7 @@
             <span>{{ ep.nome }}</span>
             <span (click)="gerarEvento(ep.codigo)">{{ ep.duracao }}</span>
         </div>    
-        <button>Ver Sinopse</button>
+        <button (click)="gerarEventoSinopse(ep.codigo)">Ver Sinopse</button>
         <button>Assistir Trailer</button>
     </div>
 </div>

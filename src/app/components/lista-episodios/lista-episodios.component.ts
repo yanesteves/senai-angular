@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { EventEmitterService } from 'src/app/services/event-emitter.service';
 
 @Component({
   selector: 'app-lista-episodios',
@@ -13,7 +14,8 @@ export class ListaEpisodiosComponent implements OnInit {
   @Input('episodios') episodios: any[] = [];  
 
   // @Output() outputEvent: EventEmitter<any> = new EventEmitter<any>();
-  @Output('outputEvent') outputEvent: EventEmitter<any> = new EventEmitter<any>();
+  // @Output('outputEvent') outputEvent: EventEmitter<any> = new EventEmitter<any>();
+  // @Output('sinopseEvent') _sinopse: EventEmitter<any> = new EventEmitter<any>();
 
   constructor() {    
   }
@@ -22,7 +24,12 @@ export class ListaEpisodiosComponent implements OnInit {
   }
 
   gerarEvento(ep: any) {
-    this.outputEvent.emit(ep)
+    // this.outputEvent.emit(ep)
+  }
+
+  gerarEventoSinopse(ep: any) {
+    // this._sinopse.emit(ep)
+    EventEmitterService.get('verSinopse').emit(ep)
   }
 
 }
